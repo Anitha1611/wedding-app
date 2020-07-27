@@ -22,24 +22,24 @@ const routes: Routes = [
         loadChildren: () => import('../wishes-list/wishes-list.module').then( m => m.WishesListPageModule)
       },
       {
+        path: 'wedding-info',
+        loadChildren: () => import('../wedding-info/wedding-info.module').then(m=>m.WeddingInfoPageModule)
+      },
+      {
         path: 'add-wishes',
         loadChildren: () => import('../add-wishes/add-wishes.module').then( m => m.AddWishesPageModule)
       },
       {
-        path: 'bride-page',
+        path: 'bride',
         loadChildren: () => import('../bride-page/bride-page.module').then( m => m.BridePagePageModule)
       },
       {
-        path: 'groom-page',
+        path: 'groom',
         loadChildren: () => import('../groom-page/groom-page.module').then( m => m.GroomPagePageModule)
       },
       {
         path: 'photos',
         loadChildren: () => import('../photos/photos.module').then( m => m.PhotosPageModule)
-      },
-      {
-        path: 'wedding-event',
-        loadChildren: () => import('../wedding-event/wedding-event.module').then( m => m.WeddingEventPageModule)
       }
     ]
   }
